@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel='icon' href="/img/weather.png">
+        <link rel="stylesheet" href="./css/styles.css">
+       <!-- <script src ="./js/app.js"> </script> load script at the end as we don't want script to load before the html code does -->
+    </head>
+
+    <body>
+     <!--  <h1> Weather </h1>  here the word weather is static. We wanna use handlebars and make it dynamic -->
+    <!-- <h1> {{title}} </h1> <!-- can acccess any objects passed using render -->
+    
+    <div class="main-content"> <!-- Everything except footer put into div in order to send footer to bottom of page-->
+         {{>header}} <!-- access common header contents-->
+         <p> Use this site to get your weather!</p>
+
+         <form> 
+             <input placeholder="Enter location"> <!-- hint text that comes in gray -->
+             <button> Search </button>
+         </form>
+         <p id = 'location'> </p> <!-- location -->
+         <p id = 'forecast'> </p> <!-- forecast -->
+    </div>
+   
+   
+    <!-- <p> <b><i>Created by {{name}}</i></b></p> -->
+    {{>footer}}
+    <script src = './js/app.js'> </script>
+    </body>
+</html>
+

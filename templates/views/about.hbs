@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel='icon' href="/img/weather.png">
+    </head>
+
+    <body>
+          <div class="main-content"> <!-- Everything except footer put into div in order to send footer to bottom of page-->
+         {{>header}} <!-- access common header contents-->
+          <img src = "./img/weather_quote.png" class="portrait">
+            <p class = 'content'> This is a basic web app developed as part of the Andrew Mead Course on backend development using Node.js</p>
+            
+            <p class = 'content'> You can enter a location, and obtain the forecast details of that location</p>
+    </div>
+        
+       
+       <!-- <p><b><i>Created by {{name}}</i></b></p> -->
+
+        {{>footer}}
+    </body>
+</html>
