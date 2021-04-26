@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
    // console.log(location) // this only shows up for a split second as the web page refreshes upon form submission
     
     // this only works on local host -let url = 'http://localhost:3000/weather?address='+location
-    let url = '/weather?=address='+location
+    let url = '/weather?address='+location
     messageOne.textContent = 'Loading...'
     fetch(url).then((response) => {
     response.json().then((data) => { // wait for json data to come then use it
