@@ -15,7 +15,9 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault() // e stands for event. this prevents the refreshing
     const location = search.value // extracts value of the variable
    // console.log(location) // this only shows up for a split second as the web page refreshes upon form submission
-    let url = 'http://localhost:3000/weather?address='+location
+    
+    // this only works on local host -let url = 'http://localhost:3000/weather?address='+location
+    let url = '/weather?=address='+location
     messageOne.textContent = 'Loading...'
     fetch(url).then((response) => {
     response.json().then((data) => { // wait for json data to come then use it

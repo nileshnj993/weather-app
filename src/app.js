@@ -4,7 +4,7 @@ const path = require('path') // used to join and manipulate path variables in a 
 const request = require('request')
 const express = require('express')
 // Express is used to host our apps on web servers so it can be used from places other than cmd
-
+const port = process.env.PORT || 3000 // either local or heroku
 const hbs = require('hbs')
 
 const app = express() // initialzing web server
@@ -133,9 +133,16 @@ app.get('*', (req,res) => { // * means anything that doesn't have a route so far
     })
 
 
-app.listen(3000, () => {
+/* app.listen(3000, () => {
     console.log('Server is up on port 3000') // function that executes once listener notices service is up
+    port 3000 can be used only for local deployment
+
 }) // check on which port to listen for service to run. https/http services have default ports.
+*/
+
+app.listen(port, ()=> {
+    console.log('Server up on port '+port)
+})
 
 // html code can directly be provided on the text being sent to browser
 
