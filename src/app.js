@@ -87,13 +87,13 @@ app.get('/weather', (req,res)=> {
                forecast({
                    latitude,
                    longitude
-               }, (error, {summary,temp,rain}) => { // use a name other than data for the parameter here else inner function cant access properties of top data
+               }, (error, {summary,temp,rain,high,low}) => { // use a name other than data for the parameter here else inner function cant access properties of top data
                    if(error)
                        res.send({error})
                    else{
                       res.send({
                           summary,temp,rain,
-                          location
+                          location,high,low
                       })
                    }
                })
