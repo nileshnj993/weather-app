@@ -13,3 +13,6 @@ You can access the web-app at [Weather Forecast Generator](https://weather-app-n
 ----------
 **Homepage**
 ![Homepage](/screenshots/homepage.png?raw=true "Homepage")
+
+**About**
+![About](/screenshots/about.png?raw=true "About")
