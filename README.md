@@ -3,7 +3,7 @@
 
 This is a basic weather app made using Node.js and deployed via Heroku. 
 
-You can access the web-app at [Weather Forecast Generator](https://weather-app-nilesh.herokuapp.com/)
+The app was deployed on Heroku. It has now been taken down to avoid extra costs.
 
 **If you want to run it locally:**
 1. Clone the github repository onto your system using `git clone https://github.com/njmit123/weather-app.git` 
